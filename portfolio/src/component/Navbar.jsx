@@ -1,4 +1,4 @@
-import { Box, Flex,VStack,Spacer,Heading, IconButton, useColorMode} from "@chakra-ui/react";
+import { Box, Flex,VStack,Spacer,Heading, IconButton, useColorMode, HStack} from "@chakra-ui/react";
 import {FaSun, FaMoon} from "react-icons/fa"
 
 
@@ -6,7 +6,8 @@ export default function Navbar() {
   const {colorMode, toggleColorMode}=useColorMode()
   const isLight= colorMode ==="light"
   return (
-      <Flex bgColor="base" w="100%" border="1px solid red" p="10px 150px" justifyContent="space-between">
+      <Flex  bg="base"> 
+      <Flex  p="10px 8rem" gap="380px"> 
         <Flex>
         <Heading fontWeight="semibold">
           <span style={{color:"cyan"}}>Prashant</span>
@@ -20,6 +21,7 @@ export default function Navbar() {
             <a href="">Projects</a>
             <a href="">Contact</a>
             <IconButton  ml={10} icon={isLight?<FaMoon/>:<FaSun/>} isRound='true' onClick={toggleColorMode}></IconButton>
+        </Flex>
         </Flex>
       </Flex>
   );

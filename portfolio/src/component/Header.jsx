@@ -1,6 +1,9 @@
 import { Box, Button, Circle, Flex, Image, Spacer, Stack, Text, useColorMode, useMediaQuery,IconButton } from '@chakra-ui/react'
 import {DownloadIcon} from "@chakra-ui/icons"
-import {FaGithub, FaLinkedin, FaMail} from "react-icons/fa"
+import {FaGithub, FaLinkedin,} from "react-icons/fa"
+import {HiMail} from "react-icons/hi"
+import {IoIosContact} from "react-icons/io"
+
 import React from 'react'
 
 function Header() {
@@ -9,18 +12,21 @@ function Header() {
 
     const [isNotSmallerScreen]=useMediaQuery("(min-width:650px)")
   return (
-    <Stack border="1px solid red" >
-        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "40":"0"} gap="200px">
+    <Stack  >
+        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"0"} gap="200px">
             <Box mt={isNotSmallerScreen? "0":"16"}>
                 <Text fontSize="3xl" fontWeight="semibold"> Hi, I am</Text>
                 <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
                 <Text >A <span>Full-Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
-                <Spacer></Spacer>
-                <a download=""><Button  mt="20px" bg="purple" _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
-                <Flex mt="20px" gap="10px" color="cyan">
-                <IconButton  icon={<FaGithub />} _hover={{color:"purple"}} > </IconButton>
-                <IconButton  icon={<FaLinkedin/>}  _hover={{color:"purple"}}> </IconButton>
-                {/* <IconButton  icon={<FaMail/>} > </IconButton> */}
+                <Flex gap="50px">
+                <a href="../resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg="purple" _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
+                
+                <Button  mt="20px" bg="purple" gap="10px" _hover={{bg:"cyan", color:"black"}}>Contact <IoIosContact /></Button>
+                </Flex >
+                <Flex mt="20px" gap="20px" color="cyan">
+                <IconButton  icon={<FaGithub />} _hover={{color:"purple"}} size="lg"> </IconButton>
+                <IconButton  icon={<FaLinkedin/>}  _hover={{color:"purple"}} size="lg"> </IconButton>
+                <IconButton  icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>
             </Box>
             <Circle bg="secondary" w="300px" h="300px" >
