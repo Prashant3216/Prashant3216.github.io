@@ -22,7 +22,7 @@ function About() {
         justifyContent="center"
         direction="column"
       >
-        <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="lg">
+        <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl">
           About me
         </Text>
         <Text mt="30px">

@@ -19,7 +19,7 @@ function Header() {
                 <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
                 <Text >A <span>Full-Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
                 <Flex gap="50px">
-                <a href="../resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg="purple" _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
+                <a href="" download><Button  mt="20px" bg="purple" _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
                 
                 <Button  mt="20px" bg="purple" gap="10px" _hover={{bg:"cyan", color:"black"}}>Contact <IoIosContact /></Button>
                 </Flex >

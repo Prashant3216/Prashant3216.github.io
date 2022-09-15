@@ -1,9 +1,12 @@
 
 import { VStack } from "@chakra-ui/react"
 import About from "../component/About"
+import Footer from "../component/Footer"
 import Header from "../component/Header"
 import Navbar from "../component/Navbar"
+import Projects from "../component/Projects"
 import Skills from "../component/Skills"
+import Tools from "../component/Tools"
 
 export default function Home(){
     return (
@@ -12,6 +15,9 @@ export default function Home(){
         <Header/>
         <About/>
         <Skills/>
+        <Tools/>
+        <Projects/>
+        <Footer/>
         </VStack>
     )
 }
