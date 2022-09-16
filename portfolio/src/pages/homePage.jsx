@@ -11,13 +11,13 @@ import Tools from "../component/Tools"
 export default function Home(){
     return (
         <VStack spacing={0}>
-        <Navbar style={{position:"fixed", top:"0"}}/>
-        <Header/>
-        <About/>
-        <Skills/>
-        <Tools/>
-        <Projects/>
-        <Footer/>
+        <Navbar />
+        <Header id="Header"/>
+        <About id="About"/>
+        <Skills id="Skills"/>
+        <Tools />
+        <Projects id="Projects"/>
+        <Footer  id="Contact"/>
         </VStack>
     )
 }

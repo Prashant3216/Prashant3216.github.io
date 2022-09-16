@@ -4,6 +4,7 @@ import { skillShadow } from '../theme/theme.config'
 
 function Tools() {
   return (
+    <Box>
     <Box pt="50px"
    pb="16px" textAlign="center"> 
     <Text mb="30px" textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl">Tools</Text>
@@ -42,6 +43,7 @@ function Tools() {
         </Box>
 
     </SimpleGrid>
+   </Box>
    </Box>
   )
 }

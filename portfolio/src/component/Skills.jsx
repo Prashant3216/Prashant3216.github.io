@@ -4,8 +4,9 @@ import { skillShadow } from '../theme/theme.config'
 
 function Skills() {
   return (
+    <Box>
    <Box pt="50px"
-   pb="16px" textAlign="center"> 
+   pb="16px" textAlign="center" id="Skills"> 
     <Text mb="30px" textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl">Skills</Text>
     <SimpleGrid columns={[2, 3, 4, 5]} gap="100px">
         <Box w="150px" h="220px"  oxShadow={skillShadow} textAlign="center"  border="2px solid cyan" borderRadius="5px">
@@ -50,6 +51,7 @@ function Skills() {
             <Text mt="15px" fontWeight="semibold">GIT</Text>
         </Box>
     </SimpleGrid>
+   </Box>
    </Box>
   )
 }
