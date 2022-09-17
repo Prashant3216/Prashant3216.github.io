@@ -17,8 +17,8 @@ function Header() {
     const [isNotSmallerScreen]=useMediaQuery("(min-width:650px)")
   return (
     <Stack  id="Header" w="100%">
-        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"0"} gap="200px">
-            <Box mt={isNotSmallerScreen? "0":"16"}>
+        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap="200px">
+            <Box mt={isNotSmallerScreen? "0":"16"} >
                 <Text fontSize="3xl" fontWeight="semibold"> Hi, I am</Text>
                 <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
                 <Text >A <span>Full-Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>

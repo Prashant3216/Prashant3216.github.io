@@ -8,12 +8,12 @@ import { FaGithub } from 'react-icons/fa';
 function Projects() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:650px)");
   return (
-    <Box w="100%" bgColor="primary">
-    <Box  pt="50px"
-    pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "0"}
-    pr={isNotSmallerScreen ? "32" : "0"}>
+    
+    <Box  pt="50px" w="100%" bgColor="primary"
+    pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "2"}
+    pr={isNotSmallerScreen ? "32" : "2"}>
     <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
-        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
+        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px" border="1px solid red">
         <Box  borderRadius="5px" p="20px" bg="base">
                 <Box border="2px solid cyan" borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>
@@ -40,7 +40,7 @@ function Projects() {
                 React.JS | Node.JS | JSON-Server | React Router | REST API | JavaScript | HTML5 | CSS3 | Chakra UI | React Icons</Text>
 
                 <Text  color="white"  fontSize="md">A indivisual project, implemented in 5 days.</Text>
-                <Flex justifyContent="space-between" p="20px">
+                <Flex justifyContent="space-between" p="20px" >
                 <a href='https://github.com/Prashant3216/accidental-pull-8164' target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://project-olx.vercel.app/" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
@@ -63,7 +63,7 @@ function Projects() {
         </SimpleGrid>
 
     </Box>
-    </Box>
+    
   )
 }
 

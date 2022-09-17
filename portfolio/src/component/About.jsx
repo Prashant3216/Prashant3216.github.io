@@ -5,14 +5,14 @@ function About() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:650px)");
   return (
     <Box id="About" w="100%" bg="primary">
-    <Flex
       
+    <Flex
       direction={isNotSmallerScreen ? "row" : "column"}
-      pl={isNotSmallerScreen ? "32" : "0"}
-      pr={isNotSmallerScreen ? "32" : "0"}
+      pl={isNotSmallerScreen ? "32" : "2"}
+      pr={isNotSmallerScreen ? "32" : "2"}
       pt="50px"
       pb="16px"
-      gap="200px"
+      gap="250px"
     >
       <Image
         w="40%"
@@ -26,7 +26,7 @@ function About() {
         <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl">
           About me
         </Text>
-        <Text mt="30px" color="white">
+        <Text mt="30px" color="white" > 
           A tech enthusiast with the ability to learn and adapt in a rapidly
           paced environment, comes with 1000+hr of bootcamp structure learning
           JavaScript, Node.Js, React.Js, Express.Js, MongoDB, HTML5, and CSS3.
@@ -34,6 +34,7 @@ function About() {
       </Flex>
     </Flex>
     </Box>
+    
   );
 }
 

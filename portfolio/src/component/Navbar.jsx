@@ -9,8 +9,8 @@ export default function Navbar() {
   const isLight= colorMode ==="light"
   return (
     <Box position="fixed" zIndex={10} top="0" left="0" bg="base" w="100%">
-      <Flex  > 
-      <Flex  p="10px 8rem" gap="380px"> 
+      
+      <Flex  p="10px 8rem" justifyContent="space-between"> 
         <Flex>
         <Heading fontWeight="semibold" onClick={()=>{Scroll.scrollToTop()}}>
           <span style={{color:"cyan"}}>Prashant</span>
@@ -26,7 +26,6 @@ export default function Navbar() {
             <IconButton  ml={10} icon={isLight?<FaMoon/>:<FaSun/>} isRound='true' onClick={toggleColorMode}></IconButton>
         </Flex>
         </Flex>
-      </Flex>
       </Box>
   );
 }

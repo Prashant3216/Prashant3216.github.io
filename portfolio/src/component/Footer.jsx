@@ -12,8 +12,8 @@ function Footer() {
   return (
     <Box bg="base" id="Contact" w="100%">
    <Box  pt="50px"
-      pb="16px" color="white" pl={isNotSmallerScreen ? "32" : "0"}
-      pr={isNotSmallerScreen ? "32" : "0"}>
+      pb="16px" color="white" pl={isNotSmallerScreen ? "32" : "2"}
+      pr={isNotSmallerScreen ? "32" : "2"}>
    <Text mb="30px" textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl" textAlign="center" >Contact Me</Text>
    <Flex gap="50px" justifyContent="flex-end">
    <Flex gap="10px" alignItems="center">
