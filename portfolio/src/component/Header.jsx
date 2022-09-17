@@ -42,7 +42,7 @@ function Header() {
                <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>
             </Box>
-            <Circle  bg="secondary" w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
+            <Circle  bg={isLight? "black":"secondary"} w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
                 <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="https://avatars.githubusercontent.com/u/87535606?s=400&u=3cc4b812b699c581475a3154d359b8b90ea7bd9d&v=4"/>
             </Circle>
         </Flex>
