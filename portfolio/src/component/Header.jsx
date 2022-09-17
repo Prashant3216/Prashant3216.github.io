@@ -7,6 +7,8 @@ import {FaGithub, FaLinkedin,} from "react-icons/fa"
 import {HiMail} from "react-icons/hi"
 import {IoIosContact} from "react-icons/io"
 import {Link} from "react-scroll"
+import {cyanColor, purpleColor} from "../theme/theme.config"
+
 
 
 
@@ -14,7 +16,8 @@ function Header() {
     const {colorMode, toggleColorMode}=useColorMode()
     const isLight=colorMode==="light"
 
-    const [isNotSmallerScreen]=useMediaQuery("(min-width:650px)")
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+
   return (
     <Stack  id="Header" w="100%">
         <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap={isNotSmallerScreen? "200px":"100px"}>
@@ -23,13 +26,13 @@ function Header() {
                 <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
                 <Text >A <span>Full-Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
                 <Flex gap="50px">
-                <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg="purple" _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
+                <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
                 
-                <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg="purple" gap="10px" _hover={{bg:"cyan", color:"black"}}>Contacts <IoIosContact /></Button></Link>
+                <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg={purpleColor} gap="10px" _hover={{bg:"cyan", color:"black"}}>Contacts <IoIosContact /></Button></Link>
                 </Flex >
-                <Flex mt="20px" gap="20px" color="cyan">
+                <Flex mt="20px" gap="20px" color={cyanColor}>
                 <a href="https://github.com/Prashant3216" target="_blank"><IconButton  icon={<FaGithub />} _hover={{color:"purple"}} size="lg"> </IconButton></a>
-                <a href="https://www.linkedin.com/in/prashant-verma-75bbba15b/" target="_blank"><IconButton icon={<FaLinkedin/>} _hover={{color:"purple"}} color="cyan" size="lg" border="none"></IconButton></a>
+                <a href="https://www.linkedin.com/in/prashant-verma-75bbba15b/" target="_blank"><IconButton icon={<FaLinkedin/>} _hover={{color:"purple"}} size="lg" border="none"></IconButton></a>
                 
                <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>

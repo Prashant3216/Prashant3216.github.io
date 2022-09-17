@@ -1,7 +1,9 @@
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex,Heading, IconButton, Input, useColorMode, useDisclosure, useMediaQuery} from "@chakra-ui/react";
+import { Box, Button, Drawer,Text, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex,Heading, IconButton, Input, useColorMode, useDisclosure, useMediaQuery} from "@chakra-ui/react";
 import { useRef } from "react";
 import {FaSun, FaMoon} from "react-icons/fa"
 import {GiHamburgerMenu} from "react-icons/gi"
+import {cyanColor, purpleColor} from "../theme/theme.config"
+
 
 
 import {Link, animateScroll as Scroll} from "react-scroll"
@@ -11,7 +13,8 @@ export default function Navbar() {
 
   const btnRef = useRef() 
   const {colorMode, toggleColorMode}=useColorMode()
-  const [isNotSmallerScreen]=useMediaQuery("(min-width:650px)")
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const isLight= colorMode ==="light"
@@ -20,22 +23,24 @@ export default function Navbar() {
       
       <Flex  pt="10px" pb="10px" pl={isNotSmallerScreen? "32":"2"} pr={isNotSmallerScreen? "32":"2"} justifyContent="space-between"> 
         <Flex>
-        <Heading fontWeight="semibold" onClick={()=>{Scroll.scrollToTop()}}>
-          <span style={{color:"cyan"}}>Prashant</span>
-          <span style={{color:"purple", paddingLeft:"5px"}}>Verma</span>
+        <Heading fontWeight="semibold" onClick={()=>{Scroll.scrollToTop()}} >
+          <Flex>
+          <Text _hover={{color:"cyan", cursor:"pointer"}} color={cyanColor}>Prashant</Text>
+          <Text _hover={{color:"#8E24AA", cursor:"pointer"}} pl="5px" color={purpleColor}>Verma</Text>
+          </Flex>
         </Heading>
         </Flex>
         <Flex>
 {isNotSmallerScreen? 
-        <Flex  gap="50px" color="cyan" fontWeight="semibold" alignItems="center" fontSize="lg">
-            <Link smooth={true} duration={1000} to="Header" spy={true} offset={-50}>Home</Link>
-            <Link  smooth={true} duration={1000} to="About"  spy={true} offset={-50}>About</Link>
-            <Link  smooth={true} duration={1000} to="Skills"  spy={true} offset={-50}>Skills</Link>
-            <Link  smooth={true} duration={1000} to="Projects"  spy={true} offset={-50}>Projects</Link>
-            <Link  smooth={true} duration={1000} to="Contact"  spy={true} offset={-50}>Contact</Link>
+        <Flex  gap="50px" color={cyanColor} fontWeight="semibold" alignItems="center" fontSize="lg">
+            <Link smooth={true} duration={1000}  to="Header" spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Home</Text></Link>
+            <Link  smooth={true} duration={1000} to="About"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>About</Text></Link>
+            <Link  smooth={true} duration={1000} to="Skills"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Skills</Text></Link>
+            <Link  smooth={true} duration={1000} to="Projects"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Projects</Text></Link>
+            <Link  smooth={true} duration={1000} to="Contact"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Contact</Text></Link>
         </Flex> : 
         <>
-            <IconButton icon={<GiHamburgerMenu/>}  onClick={onOpen} color="purple"></IconButton>
+            <IconButton icon={<GiHamburgerMenu/>}  onClick={onOpen} color={purpleColor}></IconButton>
             <Drawer
               isOpen={isOpen}
               placement='right'
@@ -45,16 +50,16 @@ export default function Navbar() {
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerCloseButton />
-        <Flex  gap="10px" color="cyan" fontWeight="semibold" p="20px" fontSize="lg" direction="column" justifyContent="flex-start">
-            <Link smooth={true}  onClick={onClose} duration={1000} to="Header" spy={true} offset={-50}>Home</Link>
+        <Flex  gap="10px" color={cyanColor} fontWeight="semibold" p="20px" fontSize="lg" direction="column" justifyContent="flex-start">
+            <Link smooth={true}  onClick={onClose} duration={1000} to="Header" spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Home</Text></Link>
             <hr />
-            <Link  smooth={true} onClick={onClose} duration={1000} to="About"  spy={true} offset={-50}>About</Link>
+            <Link  smooth={true} onClick={onClose} duration={1000} to="About"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>About</Text></Link>
             <hr />
-            <Link  smooth={true} onClick={onClose} duration={1000} to="Skills"  spy={true} offset={-50}>Skills</Link>
+            <Link  smooth={true} onClick={onClose} duration={1000} to="Skills"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Skills</Text></Link>
             <hr />
-            <Link  smooth={true} onClick={onClose} duration={1000} to="Projects"  spy={true} offset={-50}>Projects</Link>
+            <Link  smooth={true} onClick={onClose} duration={1000} to="Projects"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Projects</Text></Link>
             <hr />
-            <Link  smooth={true} onClick={onClose} duration={1000} to="Contact"  spy={true} offset={-50}>Contact</Link>
+            <Link  smooth={true} onClick={onClose} duration={1000} to="Contact"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Contact</Text></Link>
         </Flex>
               </DrawerContent>
             </Drawer>

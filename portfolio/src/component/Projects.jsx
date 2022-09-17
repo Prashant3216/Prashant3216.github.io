@@ -3,25 +3,27 @@ import { Box, SimpleGrid, Text,Image, useMediaQuery, Flex, Button, IconButton } 
 import React from 'react'
 import {BiLinkExternal} from "react-icons/bi"
 import { FaGithub } from 'react-icons/fa';
+import { cyanColor,purpleColor } from '../theme/theme.config';
 
 
 function Projects() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:650px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+
   return (
     
     <Box  pt="50px" w="100%" bgColor="primary"
     pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "2"}
     pr={isNotSmallerScreen ? "32" : "2"}>
-    <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
+    <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
         <Box  borderRadius="5px" p="20px" bg="base">
-                <Box border="2px solid cyan" borderRadius="5px">
+                <Box border="2px solid" borderColor={cyanColor} borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>
                 </Box>
                 
                 <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Replica of PharmEasy.com</Text>
                 <Text  color="white"  fontSize="md">PharmEasy is one of India's most trusted online pharmacy & medical stores offering pharmaceutical and healthcare products at a FLAT discounts.</Text>
-                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"cyan"}}>TechStack: </span>
+                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3 | REST API | Netlify</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 6 members.</Text>
                 <Flex justifyContent="space-between" p="20px">
@@ -30,13 +32,13 @@ function Projects() {
                 </Flex>
             </Box>
         <Box  borderRadius="5px" p="20px" bg="base">
-                <Box border="2px solid cyan" borderRadius="5px">
+                <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/OLX.gif"/>
                 </Box>
                 
                 <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Replica of OLX.com</Text>
                 <Text  color="white"  fontSize="md">The OLX marketplace is a platform for buying and selling services and goods such as electronics, fashion items, furniture, household goods, cars and bikes.</Text>
-                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"cyan"}}>TechStack: </span>
+                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 React.JS | Node.JS | JSON-Server | React Router | REST API | JavaScript | HTML5 | CSS3 | Chakra UI | React Icons</Text>
 
                 <Text  color="white"  fontSize="md">A indivisual project, implemented in 5 days.</Text>
@@ -46,13 +48,13 @@ function Projects() {
                 </Flex>
           </Box>
             <Box  borderRadius="5px" p="20px" bg="base">
-                <Box border="2px solid cyan" borderRadius="5px">
+                <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/mytheresa.gif"/>
                 </Box>
                 
                 <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Replica of Mytheresa.com</Text>
                 <Text  color="white"  fontSize="md">Mytheresa is German e-commerce luxury fashion online shopping destination for children's, men's, and women's luxury fashion and lifestyle design.</Text>
-                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"cyan"}}>TechStack: </span>
+                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 3 members.</Text>
                 <Flex justifyContent="space-between" p="20px">

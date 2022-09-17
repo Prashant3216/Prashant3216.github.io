@@ -1,8 +1,10 @@
 import React from "react";
 import { Flex, useMediaQuery, Image, Box, Text } from "@chakra-ui/react";
+import {cyanColor, purpleColor} from "../theme/theme.config"
+
 
 function About() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:650px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
   return (
     <Box id="About" w="100%" bg="primary">
       
@@ -23,7 +25,7 @@ function About() {
         justifyContent="center"
         direction="column"
       >
-        <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl">
+        <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl">
           About me
         </Text>
         <Text mt="30px" color="white" > 
