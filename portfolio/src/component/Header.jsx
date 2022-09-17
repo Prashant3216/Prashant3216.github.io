@@ -8,6 +8,7 @@ import {HiMail} from "react-icons/hi"
 import {IoIosContact} from "react-icons/io"
 import {Link} from "react-scroll"
 import {cyanColor, purpleColor} from "../theme/theme.config"
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -20,11 +21,15 @@ function Header() {
 
   return (
     <Stack  id="Header" w="100%">
-        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap={isNotSmallerScreen? "200px":"100px"}>
+        <Flex direction={isNotSmallerScreen? "row":"column"} mt="80px" p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap={isNotSmallerScreen? "200px":"100px"}>
             <Box mt={isNotSmallerScreen? "0":"16"} >
                 <Text fontSize="3xl" fontWeight="semibold"> Hi, I am</Text>
-                <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
-                <Text >A <span>Full-Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
+                <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text"><Typewriter options={{
+                  strings: ["Prashant Verma", "Full Stack Web Developer"],
+                  autoStart: true,
+                  loop: true,
+                    }}/></Text>
+                <Text >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
                 <Flex gap="50px">
                 <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
                 
@@ -37,8 +42,8 @@ function Header() {
                <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>
             </Box>
-            <Circle bg="secondary" w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
-                <Image  w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="https://avatars.githubusercontent.com/u/87535606?s=400&u=3cc4b812b699c581475a3154d359b8b90ea7bd9d&v=4"/>
+            <Circle  bg="secondary" w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
+                <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="https://avatars.githubusercontent.com/u/87535606?s=400&u=3cc4b812b699c581475a3154d359b8b90ea7bd9d&v=4"/>
             </Circle>
         </Flex>
     </Stack>

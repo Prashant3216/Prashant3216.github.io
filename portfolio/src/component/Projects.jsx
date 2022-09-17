@@ -16,7 +16,7 @@ function Projects() {
     pr={isNotSmallerScreen ? "32" : "2"}>
     <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
-        <Box  borderRadius="5px" p="20px" bg="base">
+        <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor} borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>
                 </Box>
@@ -31,7 +31,7 @@ function Projects() {
                   <a href="https://lustrous-salamander-5df9ee.netlify.app/index.html" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
             </Box>
-        <Box  borderRadius="5px" p="20px" bg="base">
+        <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/OLX.gif"/>
                 </Box>
@@ -47,7 +47,7 @@ function Projects() {
                 <a href="https://project-olx.vercel.app/" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
           </Box>
-            <Box  borderRadius="5px" p="20px" bg="base">
+            <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/mytheresa.gif"/>
                 </Box>
