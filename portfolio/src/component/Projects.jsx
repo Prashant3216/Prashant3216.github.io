@@ -16,7 +16,7 @@ function Projects() {
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
         <Box  borderRadius="5px" p="20px" bg="base">
                 <Box border="2px solid cyan" borderRadius="5px">
-                    <Image src="/resources/pharmEasy.gif"/>
+                    <Image src="/resources/PharmEasy.gif"/>
                 </Box>
                 
                 <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Replica of PharmEasy.com</Text>
