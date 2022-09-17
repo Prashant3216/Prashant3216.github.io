@@ -15,7 +15,7 @@ function Projects() {
     pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "2"}
     pr={isNotSmallerScreen ? "32" : "2"}>
     <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
-        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
+        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={isNotSmallerScreen ? "130px" : "50px"}>
         <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor} borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>

@@ -23,13 +23,13 @@ function Header() {
     <Stack  id="Header" w="100%">
         <Flex direction={isNotSmallerScreen? "row":"column"} mt="80px" p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap={isNotSmallerScreen? "200px":"100px"}>
             <Box mt={isNotSmallerScreen? "0":"16"} >
-                <Text fontSize="3xl" fontWeight="semibold"> Hi, I am</Text>
-                <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text"><Typewriter options={{
-                  strings: ["Prashant Verma", "Full Stack Web Developer"],
+                <Text fontSize={isNotSmallerScreen? "3xl":"xl"} fontWeight="semibold"> Hi, I am</Text>
+                <Text fontSize={isNotSmallerScreen? "5xl":"3xl"} fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text"><Typewriter options={{
+                  strings: ["Prashant Verma", "A Full Stack Web Developer"],
                   autoStart: true,
                   loop: true,
                     }}/></Text>
-                <Text >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
+                <Text fontWeight="semibold" >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
                 <Flex gap="50px">
                 <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
                 

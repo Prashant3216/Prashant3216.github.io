@@ -31,7 +31,7 @@ function About() {
           About me
         </Text>
        
-        <Text mt="30px" color="white"  > 
+        <Text mt="30px" color="white"  fontWeight="semibold"> 
           A tech enthusiast with the ability to learn and adapt in a rapidly
           paced environment, comes with 1000+hr of bootcamp structure learning
           JavaScript, Node.Js, React.Js, Express.Js, MongoDB, HTML5, and CSS3.
