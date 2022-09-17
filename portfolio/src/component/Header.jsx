@@ -17,7 +17,7 @@ function Header() {
     const [isNotSmallerScreen]=useMediaQuery("(min-width:650px)")
   return (
     <Stack  id="Header" w="100%">
-        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap="200px">
+        <Flex direction={isNotSmallerScreen? "row":"column"} p={isNotSmallerScreen? "32":"2"} justifyContent="space-between" gap={isNotSmallerScreen? "200px":"100px"}>
             <Box mt={isNotSmallerScreen? "0":"16"} >
                 <Text fontSize="3xl" fontWeight="semibold"> Hi, I am</Text>
                 <Text fontSize="5xl" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Prashant Verma</Text>
@@ -34,7 +34,7 @@ function Header() {
                <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>
             </Box>
-            <Circle bg="secondary" w="300px" h="300px" >
+            <Circle bg="secondary" w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
                 <Image  w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="https://avatars.githubusercontent.com/u/87535606?s=400&u=3cc4b812b699c581475a3154d359b8b90ea7bd9d&v=4"/>
             </Circle>
         </Flex>

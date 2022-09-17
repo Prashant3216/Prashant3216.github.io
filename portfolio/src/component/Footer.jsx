@@ -15,7 +15,7 @@ function Footer() {
       pb="16px" color="white" pl={isNotSmallerScreen ? "32" : "2"}
       pr={isNotSmallerScreen ? "32" : "2"}>
    <Text mb="30px" textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl" textAlign="center" >Contact Me</Text>
-   <Flex gap="50px" justifyContent="flex-end">
+   <Flex gap={isNotSmallerScreen ? "50px" : "20px"} justifyContent="flex-end" direction={isNotSmallerScreen ? "row" : "Column"}>
    <Flex gap="10px" alignItems="center">
    <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<MdEmail/>} _hover={{color:"purple" }} color="cyan" size="sm" > </IconButton>
    <Text>pv3216@gmail.com</Text>

@@ -13,7 +13,7 @@ function Projects() {
     pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "2"}
     pr={isNotSmallerScreen ? "32" : "2"}>
     <Text textDecoration="underline" color="cyan" fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
-        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px" border="1px solid red">
+        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap="130px">
         <Box  borderRadius="5px" p="20px" bg="base">
                 <Box border="2px solid cyan" borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>

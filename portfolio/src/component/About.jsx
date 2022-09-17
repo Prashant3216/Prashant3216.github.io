@@ -12,10 +12,10 @@ function About() {
       pr={isNotSmallerScreen ? "32" : "2"}
       pt="50px"
       pb="16px"
-      gap="250px"
+      gap={isNotSmallerScreen ? "250px" : "100px"}
     >
       <Image
-        w="40%"
+        w={isNotSmallerScreen ? "40%" : "90%"}
         src="https://gautamgohil.com/assets/aboutme.d047a9cb.svg"
       />
       <Flex
