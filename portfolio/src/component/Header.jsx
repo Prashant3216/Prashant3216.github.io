@@ -31,9 +31,9 @@ function Header() {
                     }}/></Text>
                 <Text fontWeight="semibold" >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
                 <Flex gap="50px">
-                <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}}> Resume <DownloadIcon ml="10px"/></Button></a>
+                <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}} color="white"> Resume <DownloadIcon ml="10px"/></Button></a>
                 
-                <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg={purpleColor} gap="10px" _hover={{bg:"cyan", color:"black"}}>Contacts <IoIosContact /></Button></Link>
+                <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg={purpleColor} gap="10px" _hover={{bg:"cyan", color:"black"}} color="white">Contacts <IoIosContact /></Button></Link>
                 </Flex >
                 <Flex mt="20px" gap="20px" color={cyanColor}>
                 <a href="https://github.com/Prashant3216" target="_blank"><IconButton  icon={<FaGithub />} _hover={{color:"purple"}} size="lg"> </IconButton></a>
@@ -43,7 +43,7 @@ function Header() {
                 </Flex>
             </Box>
             <Circle  bg={isLight? "black":"secondary"} w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
-                <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="https://avatars.githubusercontent.com/u/87535606?s=400&u=3cc4b812b699c581475a3154d359b8b90ea7bd9d&v=4"/>
+                <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="resources/profile_pic.jpg"/>
             </Circle>
         </Flex>
     </Stack>

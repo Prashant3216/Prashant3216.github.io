@@ -27,11 +27,11 @@ function Projects() {
                 JavaScript | HTML5 | CSS3 | REST API | Netlify</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 6 members.</Text>
                 <Flex justifyContent="space-between" p="20px">
-                  <a href='https://github.com/Prashant3216/PharmEasy.com' target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
-                  <a href="https://lustrous-salamander-5df9ee.netlify.app/index.html" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
+                  <a href='https://github.com/Prashant3216/PharmEasy.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
+                  <a href="https://lustrous-salamander-5df9ee.netlify.app/index.html" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
             </Box>
-        <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
+        {/* <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/OLX.gif"/>
                 </Box>
@@ -43,10 +43,10 @@ function Projects() {
 
                 <Text  color="white"  fontSize="md">A indivisual project, implemented in 5 days.</Text>
                 <Flex justifyContent="space-between" p="20px" >
-                <a href='https://github.com/Prashant3216/accidental-pull-8164' target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
-                <a href="https://project-olx.vercel.app/" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href='https://github.com/Prashant3216/accidental-pull-8164' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href="https://project-olx.vercel.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
-          </Box>
+          </Box> */}
             <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/mytheresa.gif"/>
@@ -58,12 +58,12 @@ function Projects() {
                 JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 3 members.</Text>
                 <Flex justifyContent="space-between" p="20px">
-                <a href='https://github.com/Prashant3216/mytheresa.com' target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
-                <a href="https://cheery-sorbet-56415b.netlify.app/" target="_blank"><Button bg="purple" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href='https://github.com/Prashant3216/mytheresa.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href="https://cheery-sorbet-56415b.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
             </Box>
         </SimpleGrid>
-
+        
     </Box>
     
   )
