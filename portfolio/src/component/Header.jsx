@@ -15,7 +15,7 @@ import Typewriter from 'typewriter-effect';
 
 function Header() {
     const {colorMode, toggleColorMode}=useColorMode()
-    const isLight=colorMode==="light"
+    const isLight=colorMode==="dark"
 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
 

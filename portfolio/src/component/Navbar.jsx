@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const isLight= colorMode ==="light"
+  const isLight= colorMode ==="dark"
   return (
     <Box position="fixed" zIndex={10} top="0" left="0" bg="base" w="100%">
       
