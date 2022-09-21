@@ -43,7 +43,7 @@ function Header() {
                 </Flex>
             </Box>
             <Circle  bg={isLight? "black":"secondary"} w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
-                <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="resources/profile_pic.jpg"/>
+                <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="resources/profile_pic_comp.jpg"/>
             </Circle>
         </Flex>
     </Stack>
