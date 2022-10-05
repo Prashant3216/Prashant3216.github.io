@@ -17,6 +17,21 @@ function Projects() {
     <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={isNotSmallerScreen ? "130px" : "50px"}>
         <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
+                <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
+                    <Image src="/resources/Tmetric_gif.gif"/>
+                </Box>
+                
+                <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Replica of Tmetric.com</Text>
+                <Text  color="white"  fontSize="md">Tmetric is a simple time tracking app for Windows, Mac, Linux which helps you to control your time, increase productivity, monitor your team performance.</Text>
+                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
+                React.Js | Node.Js | MongoDB | Express.Js | TypeScript | Chakra UI | Heroku | Netlify | JavaScript | HTML5 | CSS3</Text>
+                <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 5 members.</Text>
+                <Flex justifyContent="space-between" p="20px">
+                <a href='https://github.com/Nnishks/waiting-knife-3384' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href="https://realtmetric.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
+                </Flex>
+            </Box>
+        <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor} borderRadius="5px">
                     <Image src="/resources/PharmEasy.gif"/>
                 </Box>
