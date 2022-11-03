@@ -26,7 +26,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 React.Js | Node.Js | MongoDB | Express.Js | TypeScript | Chakra UI | Heroku | Netlify | JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 5 members.</Text>
-                <Flex justifyContent="space-between" p="20px">
+                <Flex justifyContent="space-between" p="20px" >
                 <a href='https://github.com/Nnishks/waiting-knife-3384' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://realtmetric.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
@@ -41,7 +41,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3 | REST API | Netlify</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 6 members.</Text>
-                <Flex justifyContent="space-between" p="20px">
+                <Flex justifyContent="space-between" p="20px" >
                   <a href='https://github.com/Prashant3216/PharmEasy.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                   <a href="https://lustrous-salamander-5df9ee.netlify.app/index.html" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
@@ -72,7 +72,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 3 members.</Text>
-                <Flex justifyContent="space-between" p="20px">
+                <Flex justifyContent="space-between" p="20px" >
                 <a href='https://github.com/Prashant3216/mytheresa.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://cheery-sorbet-56415b.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>

@@ -30,7 +30,7 @@ function Header() {
                   loop: true,
                     }}/></Text>
                 <Text fontWeight="semibold" >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
-                <Flex gap="50px">
+                <Flex gap="50px" flexWrap="wrap">
                 <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}} color="white"> Resume <DownloadIcon ml="10px"/></Button></a>
                 
                 <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg={purpleColor} gap="10px" _hover={{bg:"cyan", color:"black"}} color="white">Contacts <IoIosContact /></Button></Link>
@@ -42,7 +42,7 @@ function Header() {
                <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<HiMail/>} _hover={{color:"purple" }} size="lg" > </IconButton>
                 </Flex>
             </Box>
-            <Circle  bg={isLight? "black":"secondary"} w="300px" h="300px" ml={isNotSmallerScreen? "0":"16"}  >
+            <Circle  bg={isLight? "black":"secondary"} w={isNotSmallerScreen? "300px":"200px"} h={isNotSmallerScreen? "300px":"200px"} ml={isNotSmallerScreen? "0":"16"}  >
                 <Image w="100%" position="relative" top="15%" right="15%" borderRadius="50%" src="resources/profile_pic_comp.jpg"/>
             </Circle>
         </Flex>
