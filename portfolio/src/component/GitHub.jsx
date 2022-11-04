@@ -25,7 +25,7 @@ function GitHub() {
       <GitHubCalendar
           style={{ margin: "auto"}}
           username="Prashant3216"
-          year={new Date().getFullYear()}
+          
         />
       </Box>
     </Box>
