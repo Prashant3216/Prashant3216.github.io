@@ -7,7 +7,7 @@ import { cyanColor, purpleColor } from '../theme/theme.config';
 
 function GitHub() {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
     let currentTime=new Date()
     let month = currentTime.getMonth() + 1
     let day = currentTime.getDate()

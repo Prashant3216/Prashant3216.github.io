@@ -17,7 +17,7 @@ function Header() {
     const {colorMode, toggleColorMode}=useColorMode()
     const isLight=colorMode==="dark"
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
 
   return (
     <Stack  id="Header" w="100%">
@@ -30,7 +30,7 @@ function Header() {
                   loop: true,
                     }}/></Text>
                 <Text fontWeight="semibold" >A <span>Full Stack Web Developer</span> specializing in MERN stack with the drive of creating impactful front-end as well as back-end projects.</Text>
-                <Flex gap="50px" flexWrap="wrap">
+                <Flex gap="50px" >
                 <a href="resources/Prashant_Verma_Resume.pdf" download><Button  mt="20px" bg={purpleColor} _hover={{bg:"cyan", color:"black"}} color="white"> Resume <DownloadIcon ml="10px"/></Button></a>
                 
                 <Link to="Contact" smooth={true} duration={1000}><Button  mt="20px" bg={purpleColor} gap="10px" _hover={{bg:"cyan", color:"black"}} color="white">Contacts <IoIosContact /></Button></Link>

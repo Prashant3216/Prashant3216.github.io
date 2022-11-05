@@ -3,7 +3,7 @@ import React from 'react'
 import { cyanColor, purpleColor,skillShadow } from '../theme/theme.config'
 
 function Skills() {
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
 
   return (
    <Box pt="50px" w="100%" id="Skills"

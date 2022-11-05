@@ -6,7 +6,7 @@ import {MdCheckCircle} from "react-icons/md"
 
 
 function About() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
   return (
     <Box id="About" w="100%" bg="primary" >
       

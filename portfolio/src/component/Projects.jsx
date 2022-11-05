@@ -7,7 +7,7 @@ import { cyanColor,purpleColor } from '../theme/theme.config';
 
 
 function Projects() {
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
 
   return (
     

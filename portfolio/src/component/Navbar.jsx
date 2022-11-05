@@ -1,6 +1,8 @@
 import { Box, Button, Drawer,Text, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex,Heading, IconButton, Input, useColorMode, useDisclosure, useMediaQuery} from "@chakra-ui/react";
 import { useRef } from "react";
 import {FaSun, FaMoon} from "react-icons/fa"
+import {DownloadIcon} from "@chakra-ui/icons"
+
 import {GiHamburgerMenu} from "react-icons/gi"
 import {cyanColor, purpleColor} from "../theme/theme.config"
 
@@ -13,7 +15,7 @@ export default function Navbar() {
 
   const btnRef = useRef() 
   const {colorMode, toggleColorMode}=useColorMode()
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:800px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -38,8 +40,10 @@ export default function Navbar() {
             <Link  smooth={true} duration={1000} to="Skills"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Skills</Text></Link>
             <Link  smooth={true} duration={1000} to="Projects"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Projects</Text></Link>
             <Link  smooth={true} duration={1000} to="Contact"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Contact</Text></Link>
+            <a href="resources/Prashant_Verma_Resume.pdf" download><Text _hover={{cursor:"pointer", color:"cyan"}} > Resume </Text></a>
         </Flex> : 
         <>
+        
             <IconButton icon={<GiHamburgerMenu/>}  onClick={onOpen} color={purpleColor}></IconButton>
             <Drawer
               isOpen={isOpen}
@@ -60,6 +64,8 @@ export default function Navbar() {
             <Link  smooth={true} onClick={onClose} duration={1000} to="Projects"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Projects</Text></Link>
             <hr />
             <Link  smooth={true} onClick={onClose} duration={1000} to="Contact"  spy={true} offset={-50}><Text  _hover={{cursor:"pointer", color:"cyan"}}>Contact</Text></Link>
+            <hr />
+            <a href="https://drive.google.com/file/d/1Ab_UQBpF6AJwXdrMTw6MB6Cmz3uwsJbp/view?usp=sharing" target="_blank"><Text _hover={{cursor:"pointer", color:"cyan"}} > Resume </Text></a>
         </Flex>
               </DrawerContent>
             </Drawer>
