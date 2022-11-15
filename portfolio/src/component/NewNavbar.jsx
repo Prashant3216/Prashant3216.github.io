@@ -21,6 +21,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+  import {FaSun, FaMoon} from "react-icons/fa"
   import {Link, animateScroll as Scroll} from "react-scroll"
 import { cyanColor, purpleColor } from '../theme/theme.config';
 
@@ -67,6 +68,7 @@ import { cyanColor, purpleColor } from '../theme/theme.config';
   
             <Flex display={{ base: 'none', md: 'flex' }}   ml={10}>
               <DesktopNav />
+              <IconButton  ml={10} icon={isLight?<FaMoon/>:<FaSun/>} isRound='true' onClick={toggleColorMode}></IconButton>
             </Flex>
           </Flex>
   
@@ -82,8 +84,9 @@ import { cyanColor, purpleColor } from '../theme/theme.config';
   
         <Collapse in={isOpen} animateOpacity>
           <MobileNav />
+        <IconButton ml={5} icon={isLight?<FaMoon/>:<FaSun/>} isRound='true' onClick={toggleColorMode}></IconButton>
         </Collapse>
-
+        
       </Box>
     );
   }
@@ -207,8 +210,8 @@ import { cyanColor, purpleColor } from '../theme/theme.config';
           _hover={{
             textDecoration: 'none',
           }}> Resume </Text></a>
-
       </Stack>
+      
     );
   };
   
