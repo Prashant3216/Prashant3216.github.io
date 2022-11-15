@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const btnRef = useRef() 
   const {colorMode, toggleColorMode}=useColorMode()
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:830px)");
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:950px)");
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <Box position="fixed" zIndex={10} top="0" left="0" bg="base" w="100%">
       
-      <Flex  pt="10px" pb="10px" pl={isNotSmallerScreen? "32":"2"} pr={isNotSmallerScreen? "32":"2"} justifyContent="space-between"> 
+      <Flex  pt="10px" pb="10px" pl={{base:"6", md:"12", lg:"32"}} pr={{base:"6", md:"12", lg:"32"}}  justifyContent="space-between"> 
         <Flex>
         <Heading fontWeight="semibold" onClick={()=>{Scroll.scrollToTop()}} >
           <Flex>

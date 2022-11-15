@@ -6,6 +6,12 @@ export const theme = extendTheme({
     primary: "rgb(30, 41, 59)",
     secondary: "#edeff2",
   },
+breakpoints:{
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+  }
 });
 export const cyanColor = "cyan.600";
 export const purpleColor = "purple";

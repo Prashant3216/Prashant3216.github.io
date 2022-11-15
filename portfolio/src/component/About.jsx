@@ -11,18 +11,21 @@ function About() {
     <Box id="About" w="100%" bg="primary" >
       
     <Flex
-      direction={isNotSmallerScreen ? "row" : "column"}
-      pl={isNotSmallerScreen ? "32" : "2"}
-      pr={isNotSmallerScreen ? "32" : "2"}
+      direction={{base:"column", md:"column", lg:"row"}}
+      pl={{base:"6", md:"12", lg:"32"}}
+      pr={{base:"6", md:"12", lg:"32"}}
       pt="50px"
       pb="16px"
-      gap={isNotSmallerScreen ? "250px" : "100px"}
+      gap={{base:"100px", md:"150px", lg:"250px"}}
       data-aos="fade-right"
     >
-      <Image
-        w={isNotSmallerScreen ? "40%" : "90%"}
+    <Flex justify={{base:"center", md:"center", lg:"left"}}>
+    <Image
+        w={{base:"50%", md:"60%", lg:"90%"}} 
         src="https://gautamgohil.com/assets/aboutme.d047a9cb.svg"
       />
+    </Flex>
+      
       <Flex
         alignItems="center"
         justifyContent="center"

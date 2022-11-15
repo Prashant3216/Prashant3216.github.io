@@ -12,10 +12,10 @@ function Projects() {
   return (
     
     <Box  pt="50px" w="100%" bgColor="primary"
-    pb="16px" id="Projects" pl={isNotSmallerScreen ? "32" : "2"}
-    pr={isNotSmallerScreen ? "32" : "2"}>
+    pb="16px" id="Projects" pl={{base:"6", md:"12", lg:"32"}}
+    pr={{base:"6", md:"12", lg:"32"}}>
     <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
-        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={isNotSmallerScreen ? "130px" : "50px"}>
+        <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={{base:"50px", md:"90px", lg:"150px"}}>
         <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/Tmetric_gif.gif"/>
@@ -26,7 +26,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 React.Js | Node.Js | MongoDB | Express.Js | TypeScript | Chakra UI | Heroku | Netlify | JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 5 members.</Text>
-                <Flex justifyContent="space-between" p="20px" >
+                <Flex direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}}>
                 <a href='https://github.com/Nnishks/waiting-knife-3384' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://realtmetric.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
@@ -41,7 +41,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3 | REST API | Netlify</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 6 members.</Text>
-                <Flex justifyContent="space-between" p="20px" >
+                <Flex justifyContent="space-between" direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}} >
                   <a href='https://github.com/Prashant3216/PharmEasy.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                   <a href="https://lustrous-salamander-5df9ee.netlify.app/index.html" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
@@ -72,7 +72,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 3 members.</Text>
-                <Flex justifyContent="space-between" p="20px" >
+                <Flex justifyContent="space-between" direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}} >
                 <a href='https://github.com/Prashant3216/mytheresa.com' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://cheery-sorbet-56415b.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
