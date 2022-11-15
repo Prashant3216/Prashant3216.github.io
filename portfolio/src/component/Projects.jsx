@@ -26,7 +26,7 @@ function Projects() {
                 <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
                 React.Js | Node.Js | MongoDB | Express.Js | TypeScript | Chakra UI | Heroku | Netlify | JavaScript | HTML5 | CSS3</Text>
                 <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 5 members.</Text>
-                <Flex direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}}>
+                <Flex justifyContent="space-between" direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}}>
                 <a href='https://github.com/Nnishks/waiting-knife-3384' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
                 <a href="https://realtmetric.netlify.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
                 </Flex>
