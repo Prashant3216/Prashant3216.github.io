@@ -13,7 +13,9 @@ import Tools from "../component/Tools";
 export default function Home() {
   return (
     <VStack spacing={0}>
+    //custom navbar  
       {/* <Navbar /> */}
+    //conventional navbar with full responsiveness
       <WithSubnavigation/>
       <Header id="Header" />
       <About id="About" />
