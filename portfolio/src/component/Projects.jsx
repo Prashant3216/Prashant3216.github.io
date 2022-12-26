@@ -16,6 +16,24 @@ function Projects() {
     pr={{base:"6", md:"12", lg:"32"}}>
     <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={{base:"50px", md:"90px", lg:"150px"}}>
+
+        <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
+                <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
+                    <Image src="/resources/Heavens_basket.gif"/>
+                </Box>
+                
+                <Text mt="20px" mb="20px"fontSize="2xl" textAlign="center" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">{`Heaven's basket`}</Text>
+                <Text  color="white"  fontSize="md">{`Heaven's Basket is an e-commerce website where you can buy food products and fresh vegetables and order them to your doorstep.`}</Text>
+                <Text  color="white" mt="20px" mb="20px" fontSize="md"><span style={{fontWeight:"bold" ,color:"#00ACC1"}}>TechStack: </span>
+                NEXT.JS | MongoDB | Mongoose | JavaScript | JWT | HTML5 | CSS3 | Vercel | Chakra UI</Text>
+                <Text  color="white"  fontSize="md">A collaborative project, implemented in 5 days with 5 members.</Text>
+                <Flex justifyContent="space-between" direction={{base:"column", md:"row", lg:"row"}} p="20px" align={{base:"center"}} gap={{base:"20px", md:"0", lg:"0"}} >
+                <a href='https://github.com/Abrar2003/Heaven-s-basket' target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Source Code <ExternalLinkIcon ml="10px"/></Button></a>
+                <a href="https://annoyed-spark-4097-6yv7.vercel.app/" target="_blank"><Button bg="purple" color="white" _hover={{bg:"cyan", color:"black"}}>Live <ExternalLinkIcon ml="10px"/></Button></a>
+                </Flex>
+            </Box>
+
+
         <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">
                 <Box border="2px solid" borderColor={cyanColor}  borderRadius="5px">
                     <Image src="/resources/Tmetric_gif.gif"/>
