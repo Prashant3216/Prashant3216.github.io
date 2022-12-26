@@ -10,7 +10,7 @@ function Tools() {
     <Box pt="50px" w="100%"
    pb="16px" textAlign="center" pl={{base:"6", md:"12", lg:"32"}}
    pr={{base:"6", md:"12", lg:"32"}}> 
-    <Text mb="30px" textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl">Tools</Text>
+    <Text mb="30px" textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="3xl">Tools</Text>
     <SimpleGrid columns={[2, 3, 4, 5]} gap={["40px", "70px", "60px", "35px", "100px"]}>
        <Box  data-aos="fade-up" boxShadow={skillShadow} textAlign="center"  border="2px solid" borderColor={cyanColor} borderRadius="5px">
        <Box   m="auto" h="75%">

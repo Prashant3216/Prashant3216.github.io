@@ -16,7 +16,7 @@ function Footer() {
    <Box  pt="50px"
       pb="16px" color="white" pl={{base:"6", md:"12", lg:"32"}}
       pr={{base:"6", md:"12", lg:"32"}}>
-   <Text mb="30px" textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center" >Contact Me</Text>
+   <Text mb="30px" textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="3xl" textAlign="center" >Contact Me</Text>
    <Flex gap={{base:"10px", md:"20px", lg:"40px"}}  justify={{md:"center", lg:"flex-end"}} direction={{base:"column", md:"row", lg:"row"}}>
    <Flex gap="10px" alignItems="center">
    <IconButton  onClick={() => window.location = 'mailto:pv3216@gmail.com'} icon={<MdEmail/>} _hover={{color:"purple" }} color={cyanColor} size="sm" > </IconButton>

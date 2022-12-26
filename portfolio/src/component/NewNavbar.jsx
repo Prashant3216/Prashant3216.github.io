@@ -59,6 +59,7 @@ import { cyanColor, purpleColor } from '../theme/theme.config';
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
+              fontWeight='semibold'
               color={useColorModeValue('gray.800', purpleColor)}
               pl={{base:"6", md:"12", lg:"32"}}
               pr={{base:"6", md:"12", lg:"32"}}>

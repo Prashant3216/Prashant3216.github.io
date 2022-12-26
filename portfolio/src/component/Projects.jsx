@@ -14,7 +14,7 @@ function Projects() {
     <Box  pt="50px" w="100%" bgColor="primary"
     pb="16px" id="Projects" pl={{base:"6", md:"12", lg:"32"}}
     pr={{base:"6", md:"12", lg:"32"}}>
-    <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl" textAlign="center">Projects</Text>
+    <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="3xl" textAlign="center">Projects</Text>
         <SimpleGrid pt="50px" columns={[1,1,2,2]} gap={{base:"50px", md:"90px", lg:"150px"}}>
 
         <Box  borderRadius="5px" p="20px" bg="base" data-aos="zoom-in">

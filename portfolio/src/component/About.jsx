@@ -31,7 +31,7 @@ function About() {
         justifyContent="center"
         direction="column"
       >
-        <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="2xl">
+        <Text textDecoration="underline" textDecorationColor={purpleColor} color={cyanColor} fontWeight="semibold" fontSize="3xl">
           About me
         </Text>
         <List spacing={3} mt="30px" color="white"  fontWeight="semibold">
